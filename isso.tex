@@ -70,13 +70,10 @@
 \renewcommand{\itemmarker}{{\small\textbullet}}
 \renewcommand{\ratingmarker}{\faCircle}
 
-%% sample.bib contains your publications
-\addbibresource{sample.bib}
 
 \begin{document}
 \name{Javier Conde}
 \tagline{Ingeniero de Telecomunicaciones, UPM}
-% Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
 \photo{4cm}{photo}
 \personalinfo{%
   % Not all of these are required!
@@ -96,14 +93,13 @@
 \makecvheader
 \end{fullwidth}
 
-%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller§
+
 \AtBeginEnvironment{itemize}{\small}
 
-%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
-%% You can always just use \marginpar{...} if you do
-%% not need to align the top of the contents to any
-%% \cvsection title in the "main" bar.
-\cvsection[page1sidebar]{Estudios}
+
+\cvsection[page1sidebar]{Formación Académica}
+
+\cvevent{Doctorado en Ingeniería de Sistemas Telemáticos}{Universidad Politécnica de Madrid}{2020 -- Actualidad}{Madrid}
 
 \cvevent{Máster Universitario en Ingeniería de Telecomunicación {\small(Media 9.5, MH 10 asignat.)}}{Universidad Politécnica de Madrid}{2018 -- 2020}{Madrid}
 \cvevent{Grado en Ingeniería de Tecnologías y Servicios de Telecomunicación {\small(Media 8.8, 1º en especialidad de telemática, MH 21 asignat.)}}{Universidad Politécnica de Madrid}{2014 -- 2018}{Madrid}
@@ -116,14 +112,14 @@
 
 \cvevent{Grupo Internet Nueva Generación}{Departamento de Ingeniería de Sistemas Telemáticos, UPM}{Enero 2020 -- Actualidad}{Madrid}
 \begin{itemize}
-\item Participación en proyectos de investigación. 
-\item Definición de modelo de datos con FIWARE.
+\item Participación en proyectos europeos en el área de Linked Open Data, Machine Learning y Digital Twins. 
+\item Contribución en FIWARE: The Open Source Platform for Our Smart Digital Future.
 \end{itemize}
 \divider
 
-\cvevent{Tutor Trabajo Fin de Titulación}{UPM}{Enero 2019 -- Actualidad}{Madrid}
+\cvevent{Colaboraciones Docentes}{UPM}{Enero 2019 -- Actualidad}{Madrid}
 \begin{itemize}
-\item Diseño e implantación de una herramienta para la Integración Digital de la gestión del horario de los estudiantes de la ETSIT.   
+\item Dirección de Trabajos de Fin de Titulación.   
 \end{itemize}
 \divider
 
@@ -142,55 +138,7 @@
 \end{itemize}
 \divider
 
-%\cvevent{Profesor particular}{Profesor de apoyo}{2014 -- %Actualidad}{Ourense/Madrid}
-%\begin{itemize}
-%\item Impartición de clases de Matemáticas, Física y Química %a alumnos de ESO y bachillerato.
-%\item Impartición de clases de programación y redes a alumnos %universitarios.
-%\end{itemize}
-%\divider
-
-
-% \cvevent{Product Manager \& UI Lead}{Google}{Oct 2001 -- July 2005}{Palo Alto, CA}
-
-% \begin{itemize}
-% \item Appointed by the founder Larry Page in 2001 to lead the Product Management and User Interaction teams
-% \item Optimized Google's homepage and A/B tested every minor detail to increase usability (incl.~spacing between words, % color schemes and pixel-by-pixel element alignment)
-% \end{itemize}
-%
-% \divider
-
-% \cvevent{Product Engineer}{Google}{23 June 1999 -- 2001}{Palo Alto, CA}
-
-% \begin{itemize}
-% \item Joined the company as employe \#20 and female employee \#1
-% \item Developed targeted advertisement in order to use user's search queries and show them related ads
-% \end{itemize}
-
-
-
 
 \clearpage
-
-% \cvsection[page2sidebar]{Publications}
-% 
-% \nocite{*}
-% 
-% \printbibliography[heading=pubtype,title={\printinfo{\faBook}{Books}},type=book]
-% 
-% \divider
-% 
-% \printbibliography[heading=pubtype,title={\printinfo{\faFileTextO}{Journal Articles}}, type=article]
-% 
-% \divider
-% 
-% \printbibliography[heading=pubtype,title={\printinfo{\faGroup}{Conference Proceedings}},type=inproceedings]
-% 
-%% If the NEXT page doesn't start with a \cvsection but you'd
-%% still like to add a sidebar, then use this command on THIS
-%% page to add it. The optional argument lets you pull up the
-%% sidebar a bit so that it looks aligned with the top of the
-%% main column.
-% \addnextpagesidebar[-1ex]{page3sidebar}
-
 
 \end{document}
